@@ -1829,7 +1829,7 @@ namespace gamescope
     {
         uint64_t ulModifier = ( uint64_t( uModifierHi ) << 32 ) | uModifierLo;
         //xdg_log.infof( "Modifier: %s (0x%" PRIX32 ") %lx", drmGetFormatName( uFormat ), uFormat, ulModifier );
-        if ( ulModifier != DRM_FORMAT_MOD_INVALID )
+        // if ( ulModifier != DRM_FORMAT_MOD_INVALID )
             m_FormatModifiers[uFormat].emplace_back( ulModifier );
     }
 
